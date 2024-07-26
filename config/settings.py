@@ -1,5 +1,3 @@
-'''Настройки для Django проекта'''
-
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -9,7 +7,6 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# SECRET_KEY = 'django-insecure-r-_*zaw_026ttn6^dd=lrw&@^jb!e9)2=r4s6qsfn$@xgl)m&8'
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # DEBUG = True
